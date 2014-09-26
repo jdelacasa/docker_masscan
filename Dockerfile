@@ -6,7 +6,7 @@ RUN apt-get -y install git gcc make libpcap-dev
 RUN git clone https://github.com/robertdavidgraham/masscan
 RUN mkdir /home/workspace
 RUN cd /home/workspace/ ; git clone https://github.com/robertdavidgraham/masscan  
-RUN cd /home/workspace/masscan ; make
+RUN cd /home/workspace/masscan ; make; make install
 
 
 
